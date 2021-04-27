@@ -93,5 +93,5 @@ io.on('connect', (socket) => {
         })
     })
 })
-
-server.listen(3000, () => console.log("Server Connected"));
+var PORT=process.env.port ||33000;
+server.listen(PORT, () => console.log("Server Connected"));
